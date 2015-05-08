@@ -33,8 +33,6 @@ public class CameraFollow : MonoBehaviour {
 	public bool isPushingRight;
 	public bool isPushingBack;
 	
-	private bool test;
-	
 	// Use this for initialization
 	void Start () {
 		
