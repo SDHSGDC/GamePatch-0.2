@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class CameraFollow : MonoBehaviour {
@@ -12,25 +12,39 @@ public class CameraFollow : MonoBehaviour {
 	public Transform Target;
 	
 	private Vector3 velocity = Vector3.zero;
-	
+
+	[HideInInspector]
 	public float angleX;
-	
+
+	[HideInInspector]
 	public float distanceZ = 10f;
-	public float distanceX = 5f;    
+	[HideInInspector]
+	public float distanceX = 5f; 
+	[HideInInspector]
 	public float distanceY = 5f;
-	
+
+	[HideInInspector]
 	public bool isRoating = false;
-	
+
+	[HideInInspector]
 	public float rotationState;
-	
+
+	[HideInInspector]
 	public bool forwardKey;
+	[HideInInspector]
 	public bool leftKey;
+	[HideInInspector]
 	public bool rightKey;
+	[HideInInspector]
 	public bool backKey;
 	
+    [HideInInspector]
 	public bool isPushingForward;
+	[HideInInspector]
 	public bool isPushingLeft;
+	[HideInInspector]
 	public bool isPushingRight;
+	[HideInInspector]
 	public bool isPushingBack;
 	
 	// Use this for initialization
